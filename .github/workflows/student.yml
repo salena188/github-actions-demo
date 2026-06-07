@@ -1,0 +1,14 @@
+name: Student Workflow
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Student File
+        run: cat index.txt
