@@ -1,0 +1,12 @@
+name: Show Current Directory
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Current Directory
+        run: pwd
